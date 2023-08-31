@@ -1,0 +1,88 @@
+nav {
+    display: flex; 
+    background-color: grey;
+    padding: 10px ;
+    justify-content: space-between;
+ }
+ 
+ .nav-item {
+     width: 60px;
+     height: 30px;
+     background-color:pink;
+ }
+ 
+ #nav-left {
+     display: flex;
+     justify-content: space-between;
+     width: 50%;
+}
+
+h2 {
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    margin: 40px left;
+    margin-top: 80px;
+}
+.column {
+    padding: 20px;
+    background: grey;
+}
+
+.column ul {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    gap: 10px 20px
+}
+.column .item {
+    width: 300px;
+    height: 300px;
+    background: pink;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.description {
+    padding: 30px;
+    background: grey;
+}
+
+.description ul {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    gap: 10px 20px;
+    list-style: none;
+    margin: 0.5;
+    padding: .1;
+}
+
+.description .item {
+    flex-basis: 33.3%;
+    height: 40px;
+    background: pink;
+    margin-top: 10px;
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+   padding: 5px;
+   background-color:pink;
+   color: pink;
+  }
+
+
+/* Media queries are conditions that we want add styles to. We only need to override the style properties we would like to change at that condition */
+@media (max-width:850px) {
+    .description ul {
+        display: block;
+    }
+
+    .column ul {
+        display: block;
+    }
+}

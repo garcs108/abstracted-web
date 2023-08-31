@@ -1,0 +1,164 @@
+h1 {
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    margin: 40px auto;
+}
+
+h2 {
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    margin: 40px left;
+}
+
+h3 {
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    margin: 40px;
+}
+
+h4 {
+    width: 800px;
+    height: 300px;
+    background-color: gray;
+    margin-top: 40px;
+}
+
+.alignright {
+    float:right
+}
+
+nav {
+   display: flex; 
+   background-color: grey;
+   padding: 10px ;
+   justify-content: space-between;
+}
+
+.nav-item {
+    width: 60px;
+    height: 30px;
+    background-color:pink;
+}
+
+#nav-left {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#grid {
+    flex-basis: 90%;
+    padding: 25px
+}
+
+#banner {
+    background: grey;
+    width: 100%;
+    height: 500px;
+}
+
+.category {
+    padding: 30px;
+    background: grey;
+}
+
+.category ul {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   column-gap: 10px;
+   row-gap: 10px;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.category .item {
+    width: 500px;
+    height: 70px;
+    background: pink;
+}
+
+.column {
+    padding: 20px;
+    background: grey;
+}
+
+.column ul {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    gap: 10px 20px
+}
+
+.column .item {
+    width: 300px;
+    height: 300px;
+    background: pink;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.description {
+    padding: 30px;
+    background: grey;
+}
+
+.description ul {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    gap: 10px 20px;
+    list-style: none;
+    margin: 0.5;
+    padding: .1;
+}
+
+.description .item {
+    flex-basis: 33.3%;
+    height: 40px;
+    background: pink;
+    margin-top: 10px;
+}
+
+li {
+    display: list-item;
+}
+
+.category header {
+    width: 100px;
+    height: 50px;
+    background: pink;
+    margin-bottom: 20px;
+}
+
+article {
+    display: block;
+}
+
+section {
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+
+/* Media queries are conditions that we want add styles to. We only need to override the style properties we would like to change at that condition */
+@media (max-width:850px) {
+    .description ul {
+        display: block;
+    }
+
+    .column ul {
+        display: block;
+    }
+
+
+}
+
